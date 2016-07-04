@@ -1366,6 +1366,7 @@
 		48FEC0A51D2A0D6200233F31 /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0A41D2A0D6200233F31 /* TabBarVC.m */; };
 		48FEC0AC1D2A13BB00233F31 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0AB1D2A13BB00233F31 /* BaseVC.m */; };
 		48FEC0AF1D2A297A00233F31 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0AE1D2A297A00233F31 /* HomeVC.m */; };
+		48FEC0B71D2A48FD00233F31 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0B61D2A48FD00233F31 /* HttpManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2744,6 +2745,8 @@
 		48FEC0AB1D2A13BB00233F31 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		48FEC0AD1D2A297A00233F31 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		48FEC0AE1D2A297A00233F31 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		48FEC0B51D2A48FD00233F31 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		48FEC0B61D2A48FD00233F31 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
 		C22E432DBE24CD4B55766BA9 /* libPods-MQAndZXHHiChao.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MQAndZXHHiChao.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD14D265E88E3C71DD1BCBEB /* Pods-MQAndZXHHiChao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQAndZXHHiChao.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQAndZXHHiChao/Pods-MQAndZXHHiChao.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2785,7 +2788,7 @@
 				48FEB5E51D29F8ED00233F31 /* Controllers */,
 				48FEB5FE1D29F8ED00233F31 /* Model */,
 				48FEB5FF1D29F8ED00233F31 /* Resource */,
-				48FEBB411D29F8F800233F31 /* Tools */,
+				48FEC0B31D2A48EB00233F31 /* Tools */,
 				48FEBB441D29F8F800233F31 /* View */,
 				48FEB5CE1D29EEE400233F31 /* AppDelegate.h */,
 				48FEB5CF1D29EEE400233F31 /* AppDelegate.m */,
@@ -4406,21 +4409,6 @@
 			path = Third;
 			sourceTree = "<group>";
 		};
-		48FEBB411D29F8F800233F31 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				48FEBB431D29F8F800233F31 /* Networking */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		48FEBB431D29F8F800233F31 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		48FEBB441D29F8F800233F31 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -4476,6 +4464,23 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		48FEC0B31D2A48EB00233F31 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				48FEC0B41D2A48EB00233F31 /* Networking */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		48FEC0B41D2A48EB00233F31 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				48FEC0B51D2A48FD00233F31 /* HttpManager.h */,
+				48FEC0B61D2A48FD00233F31 /* HttpManager.m */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		7B0D0A699B9BA7749FD2A0E5 /* Frameworks */ = {
@@ -5961,6 +5966,7 @@
 				48FEB5D31D29EEE400233F31 /* ViewController.m in Sources */,
 				48FEC0971D2A024E00233F31 /* GuideVC.m in Sources */,
 				48FEB5D01D29EEE400233F31 /* AppDelegate.m in Sources */,
+				48FEC0B71D2A48FD00233F31 /* HttpManager.m in Sources */,
 				48FEC0AC1D2A13BB00233F31 /* BaseVC.m in Sources */,
 				48FEC0AF1D2A297A00233F31 /* HomeVC.m in Sources */,
 				48FEC0941D2A023C00233F31 /* LoginVC.m in Sources */,

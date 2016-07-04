@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>首页</string>
+		<key>image</key>
+		<string>bottom_home_icon</string>
+		<key>image_selected</key>
+		<string>bottom_home_icon_on</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>搭配</string>
+		<key>image</key>
+		<string>bottom_dapei_icon</string>
+		<key>image_selected</key>
+		<string>bottom_dapei_icon_on</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>社区</string>
+		<key>image</key>
+		<string>bottom_bbs_icon</string>
+		<key>image_selected</key>
+		<string>bottom_bbs_icon_on</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>男衣邦</string>
+		<key>image</key>
+		<string>bottom_like_icon</string>
+		<key>image_selected</key>
+		<string>bottom_like_icon_on</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>购物车</string>
+		<key>image</key>
+		<string>bottom_shopping_icon</string>
+		<key>image_selected</key>
+		<string>bottom_shopping_icon_on</string>
+	</dict>
+</array>
+</plist>

@@ -24,6 +24,7 @@
     
     NSString *isFirst = [[NSUserDefaults standardUserDefaults] objectForKey:@"isFirst"];
     
+    //默认一直带有引导页的方式
     GuideVC *guideVC = [[GuideVC alloc] init];
     self.window.rootViewController = guideVC;
 

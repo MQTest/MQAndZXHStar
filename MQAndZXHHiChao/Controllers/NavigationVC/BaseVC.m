@@ -33,14 +33,15 @@ typedef enum : NSUInteger {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationController.navigationBarHidden = YES;
-    self.view.backgroundColor = [UIColor redColor];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self createView];
 }
 
 #pragma mark- 创建视图
 - (void)createView{
-    
+
     UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kMainBoundsW, 64)];
     bgView.backgroundColor = MQColor(250, 250, 250);
     [self.view addSubview:bgView];

@@ -60,7 +60,7 @@ typedef void(^CallBackMessageBlock)(id resposeObject);
 
 //
 // 随机色
-#define MQRandomColor BXColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+#define MQRandomColor MQColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 // 设置颜色
 #define MQColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]

@@ -1367,6 +1367,8 @@
 		48FEC0AC1D2A13BB00233F31 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0AB1D2A13BB00233F31 /* BaseVC.m */; };
 		48FEC0AF1D2A297A00233F31 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0AE1D2A297A00233F31 /* HomeVC.m */; };
 		48FEC0B71D2A48FD00233F31 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0B61D2A48FD00233F31 /* HttpManager.m */; };
+		48FEC0C81D2A944C00233F31 /* TableHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0C71D2A944C00233F31 /* TableHeaderViewModel.m */; };
+		48FEC0CE1D2A94B600233F31 /* TableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEC0CD1D2A94B600233F31 /* TableHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2747,6 +2749,10 @@
 		48FEC0AE1D2A297A00233F31 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		48FEC0B51D2A48FD00233F31 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
 		48FEC0B61D2A48FD00233F31 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		48FEC0C61D2A944C00233F31 /* TableHeaderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeaderViewModel.h; sourceTree = "<group>"; };
+		48FEC0C71D2A944C00233F31 /* TableHeaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeaderViewModel.m; sourceTree = "<group>"; };
+		48FEC0CC1D2A94B600233F31 /* TableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeaderView.h; sourceTree = "<group>"; };
+		48FEC0CD1D2A94B600233F31 /* TableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeaderView.m; sourceTree = "<group>"; };
 		C22E432DBE24CD4B55766BA9 /* libPods-MQAndZXHHiChao.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MQAndZXHHiChao.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD14D265E88E3C71DD1BCBEB /* Pods-MQAndZXHHiChao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQAndZXHHiChao.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQAndZXHHiChao/Pods-MQAndZXHHiChao.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2940,26 +2946,12 @@
 		48FEB5F21D29F8ED00233F31 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
-				48FEB5F31D29F8ED00233F31 /* Model */,
-				48FEB5F41D29F8ED00233F31 /* View */,
+				48FEC0C51D2A942500233F31 /* Model */,
+				48FEC0C11D2A93EB00233F31 /* View */,
 				48FEC0AD1D2A297A00233F31 /* HomeVC.h */,
 				48FEC0AE1D2A297A00233F31 /* HomeVC.m */,
 			);
 			path = HomeVC;
-			sourceTree = "<group>";
-		};
-		48FEB5F31D29F8ED00233F31 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		48FEB5F41D29F8ED00233F31 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		48FEB5F51D29F8ED00233F31 /* LoginVC */ = {
@@ -4483,6 +4475,24 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		48FEC0C11D2A93EB00233F31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48FEC0CC1D2A94B600233F31 /* TableHeaderView.h */,
+				48FEC0CD1D2A94B600233F31 /* TableHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48FEC0C51D2A942500233F31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48FEC0C61D2A944C00233F31 /* TableHeaderViewModel.h */,
+				48FEC0C71D2A944C00233F31 /* TableHeaderViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7B0D0A699B9BA7749FD2A0E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -5971,11 +5981,13 @@
 				48FEC0AF1D2A297A00233F31 /* HomeVC.m in Sources */,
 				48FEC0941D2A023C00233F31 /* LoginVC.m in Sources */,
 				48FEC08B1D2A020300233F31 /* CommunityVC.m in Sources */,
+				48FEC0CE1D2A94B600233F31 /* TableHeaderView.m in Sources */,
 				48FEC08E1D2A021300233F31 /* CollocationVC.m in Sources */,
 				48FEC0881D2A01F200233F31 /* CarVC.m in Sources */,
 				48FEB5CD1D29EEE400233F31 /* main.m in Sources */,
 				48FEC0A01D2A094100233F31 /* MansWearVC.m in Sources */,
 				48FEC0A51D2A0D6200233F31 /* TabBarVC.m in Sources */,
+				48FEC0C81D2A944C00233F31 /* TableHeaderViewModel.m in Sources */,
 				48FEC0851D2A01D500233F31 /* UserVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -34,6 +34,19 @@ typedef void(^Failed)(NSError *error);
 
 typedef void(^ITFinishedBlock)(id responseObject, NSError *error);
 typedef void(^CallBackMessageBlock)(id resposeObject);
+
+
+typedef enum : NSUInteger {
+    LeftButtonTag = 10,
+    MidButtonTag,
+    RightButtonTag,
+} NavButtonTag;
+
+typedef enum : NSUInteger {
+    TodayButtonTag = 30,
+
+} HomeTableViewGoodsSectionButtonTag;
+
 //disable loggin on production
 #ifdef DEBUG
 #define KSLog(format, ...) CFShow((__bridge CFTypeRef)[NSString stringWithFormat:format, ## __VA_ARGS__]);

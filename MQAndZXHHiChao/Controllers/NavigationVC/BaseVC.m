@@ -12,6 +12,7 @@
     
     UILabel *_titleLabel;
     UIButton *_leftButton;
+    UIButton *_midButton;
     UIButton *_rightButton;
     
 }
@@ -21,10 +22,11 @@
 
 @end
 
-typedef enum : NSUInteger {
-    LeftButtonTag = 10,
-    RightButtonTag,
-} NavButtonTag;
+//typedef enum : NSUInteger {
+//    LeftButtonTag = 10,
+//    MidButtonTag,
+//    RightButtonTag,
+//} NavButtonTag;
 
 
 @implementation BaseVC
@@ -46,7 +48,6 @@ typedef enum : NSUInteger {
     bgView.backgroundColor = MQColor(250, 250, 250);
     [self.view addSubview:bgView];
     
-    
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.font = [UIFont systemFontOfSize:20];
     label.textAlignment = NSTextAlignmentCenter;
@@ -59,6 +60,13 @@ typedef enum : NSUInteger {
     leftBtn.tag = LeftButtonTag;
     [bgView addSubview:leftBtn];
     _leftButton = leftBtn;
+    
+    UIButton *midBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    midBtn.frame = CGRectZero;
+    [midBtn addTarget:self action:@selector(midBtn:) forControlEvents:UIControlEventTouchUpInside];
+    midBtn.tag = MidButtonTag;
+    [bgView addSubview:midBtn];
+    _midButton = midBtn;
     
     UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     rightBtn.frame = CGRectZero;
@@ -100,10 +108,58 @@ typedef enum : NSUInteger {
         button.frame = CGRectMake(kMainBoundsW - 40, 27, 30, 30);
     }
 }
+//设置左按钮
+- (void)setLeftButtonWithTitle:(NSString *)title andIamge:(NSString *)image andSpace:(CGFloat)space{
+    if (title == nil && image == nil) {
+        return;
+    }
+    _leftButton.frame = CGRectMake(10, 27, 30, 30);
+    [_leftButton setTitle:title forState:UIControlStateNormal];
+    [_leftButton setFont:[UIFont systemFontOfSize:10]];
+    [_leftButton setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
+    [_leftButton setImage: [UIImage imageNamed:image] forState:UIControlStateNormal];
+    //图片在上
+    [_leftButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleTop imageTitleSpace:space];
+    
+    
+}
 
+//设置右按钮
+- (void)setRightButtonWithTitle:(NSString *)title andIamge:(NSString *)image andSpace:(CGFloat)space{
+    if (title == nil && image == nil) {
+        return;
+    }
+    _rightButton.frame = CGRectMake(kMainBoundsW - 40, 27, 30, 30);
+    [_rightButton setTitle:title forState:UIControlStateNormal];
+    [_rightButton setFont:[UIFont systemFontOfSize:10]];
+    [_rightButton setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
+    [_rightButton setImage: [UIImage imageNamed:image] forState:UIControlStateNormal];
+     //图片在上
+    [_rightButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleTop imageTitleSpace:space];
+}
+ 
+//设置中间Button
+- (void)setMidButtonWithTitle:(NSString *)title andIamge:(NSString *)image andSpace:(CGFloat)space{
+    if (title == nil && image == nil) {
+        return;
+    }
+    _midButton.frame = CGRectMake(55, 27, kMainBoundsW - 110, 30);
+    _midButton.layer.cornerRadius = 10;
+    _midButton.clipsToBounds = YES;
+    _midButton.backgroundColor = MQColor(235, 235, 235);
+    [_midButton setTitle:title forState:UIControlStateNormal];
+    [_midButton setFont:[UIFont systemFontOfSize:14]];
+    [_midButton setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
+    [_midButton setImage: [UIImage imageNamed:image] forState:UIControlStateNormal];
+     //图片在左
+    [_midButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:space];
+
+    
+}
 
 
 #pragma mark- 按钮点击事件
+
 - (void)leftBtn:(UIButton *)sender{
 
     if (self.blockHandle) {
@@ -117,8 +173,17 @@ typedef enum : NSUInteger {
     }
 }
 
+- (void)midBtn:(UIButton *)sender{
+    if (self.blockHandle) {
+        self.blockHandle(sender);
+    }
+}
+
 - (void)buttonCallBackBlock:(Callback)buttonBlock{
-    self.blockHandle = buttonBlock;
+    if (buttonBlock) {
+        self.blockHandle = buttonBlock;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

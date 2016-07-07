@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0B30970AFA1D2733541B9469 /* libPods-MQAndZXHHiChao.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C22E432DBE24CD4B55766BA9 /* libPods-MQAndZXHHiChao.a */; };
+		48F1D7521D2B521F00F7FD2D /* AllOfLibraryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D7511D2B521F00F7FD2D /* AllOfLibraryView.m */; };
+		48F1D77D1D2C095C00F7FD2D /* TableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D77C1D2C095C00F7FD2D /* TableViewCellModel.m */; };
+		48F1D7801D2C920200F7FD2D /* GoodsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D77F1D2C920200F7FD2D /* GoodsTableViewCell.m */; };
+		48F1D7831D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D7821D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.m */; };
+		48F1D7881D2D0ABC00F7FD2D /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D7871D2D0ABC00F7FD2D /* SearchVC.m */; };
+		48F1D78B1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D78A1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m */; };
 		48FEB5CD1D29EEE400233F31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEB5CC1D29EEE400233F31 /* main.m */; };
 		48FEB5D01D29EEE400233F31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEB5CF1D29EEE400233F31 /* AppDelegate.m */; };
 		48FEB5D31D29EEE400233F31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEB5D21D29EEE400233F31 /* ViewController.m */; };
@@ -1373,6 +1379,18 @@
 
 /* Begin PBXFileReference section */
 		1D7C2117601AA1AAA80A8888 /* Pods-MQAndZXHHiChao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQAndZXHHiChao.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQAndZXHHiChao/Pods-MQAndZXHHiChao.debug.xcconfig"; sourceTree = "<group>"; };
+		48F1D7501D2B521F00F7FD2D /* AllOfLibraryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllOfLibraryView.h; sourceTree = "<group>"; };
+		48F1D7511D2B521F00F7FD2D /* AllOfLibraryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllOfLibraryView.m; sourceTree = "<group>"; };
+		48F1D77B1D2C095C00F7FD2D /* TableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellModel.h; sourceTree = "<group>"; };
+		48F1D77C1D2C095C00F7FD2D /* TableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellModel.m; sourceTree = "<group>"; };
+		48F1D77E1D2C920200F7FD2D /* GoodsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsTableViewCell.h; sourceTree = "<group>"; };
+		48F1D77F1D2C920200F7FD2D /* GoodsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsTableViewCell.m; sourceTree = "<group>"; };
+		48F1D7811D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
+		48F1D7821D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
+		48F1D7861D2D0ABC00F7FD2D /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
+		48F1D7871D2D0ABC00F7FD2D /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
+		48F1D7891D2D0EF700F7FD2D /* GoodsSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsSectionHeaderView.h; sourceTree = "<group>"; };
+		48F1D78A1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsSectionHeaderView.m; sourceTree = "<group>"; };
 		48FEB5C81D29EEE400233F31 /* MQAndZXHHiChao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQAndZXHHiChao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FEB5CC1D29EEE400233F31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48FEB5CE1D29EEE400233F31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -2950,6 +2968,8 @@
 				48FEC0C11D2A93EB00233F31 /* View */,
 				48FEC0AD1D2A297A00233F31 /* HomeVC.h */,
 				48FEC0AE1D2A297A00233F31 /* HomeVC.m */,
+				48F1D7861D2D0ABC00F7FD2D /* SearchVC.h */,
+				48F1D7871D2D0ABC00F7FD2D /* SearchVC.m */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -4397,6 +4417,8 @@
 		48FEBB3E1D29F8F800233F31 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				48F1D7811D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.h */,
+				48F1D7821D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.m */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -4480,6 +4502,12 @@
 			children = (
 				48FEC0CC1D2A94B600233F31 /* TableHeaderView.h */,
 				48FEC0CD1D2A94B600233F31 /* TableHeaderView.m */,
+				48F1D7501D2B521F00F7FD2D /* AllOfLibraryView.h */,
+				48F1D7511D2B521F00F7FD2D /* AllOfLibraryView.m */,
+				48F1D77E1D2C920200F7FD2D /* GoodsTableViewCell.h */,
+				48F1D77F1D2C920200F7FD2D /* GoodsTableViewCell.m */,
+				48F1D7891D2D0EF700F7FD2D /* GoodsSectionHeaderView.h */,
+				48F1D78A1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4489,6 +4517,8 @@
 			children = (
 				48FEC0C61D2A944C00233F31 /* TableHeaderViewModel.h */,
 				48FEC0C71D2A944C00233F31 /* TableHeaderViewModel.m */,
+				48F1D77B1D2C095C00F7FD2D /* TableViewCellModel.h */,
+				48F1D77C1D2C095C00F7FD2D /* TableViewCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -5974,20 +6004,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				48FEB5D31D29EEE400233F31 /* ViewController.m in Sources */,
+				48F1D7801D2C920200F7FD2D /* GoodsTableViewCell.m in Sources */,
 				48FEC0971D2A024E00233F31 /* GuideVC.m in Sources */,
 				48FEB5D01D29EEE400233F31 /* AppDelegate.m in Sources */,
 				48FEC0B71D2A48FD00233F31 /* HttpManager.m in Sources */,
 				48FEC0AC1D2A13BB00233F31 /* BaseVC.m in Sources */,
 				48FEC0AF1D2A297A00233F31 /* HomeVC.m in Sources */,
 				48FEC0941D2A023C00233F31 /* LoginVC.m in Sources */,
+				48F1D77D1D2C095C00F7FD2D /* TableViewCellModel.m in Sources */,
 				48FEC08B1D2A020300233F31 /* CommunityVC.m in Sources */,
 				48FEC0CE1D2A94B600233F31 /* TableHeaderView.m in Sources */,
+				48F1D7521D2B521F00F7FD2D /* AllOfLibraryView.m in Sources */,
 				48FEC08E1D2A021300233F31 /* CollocationVC.m in Sources */,
+				48F1D7881D2D0ABC00F7FD2D /* SearchVC.m in Sources */,
 				48FEC0881D2A01F200233F31 /* CarVC.m in Sources */,
 				48FEB5CD1D29EEE400233F31 /* main.m in Sources */,
 				48FEC0A01D2A094100233F31 /* MansWearVC.m in Sources */,
 				48FEC0A51D2A0D6200233F31 /* TabBarVC.m in Sources */,
+				48F1D78B1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m in Sources */,
 				48FEC0C81D2A944C00233F31 /* TableHeaderViewModel.m in Sources */,
+				48F1D7831D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.m in Sources */,
 				48FEC0851D2A01D500233F31 /* UserVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

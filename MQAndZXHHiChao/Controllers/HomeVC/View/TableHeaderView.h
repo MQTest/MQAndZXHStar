@@ -10,6 +10,11 @@
 
 @interface TableHeaderView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame withDataArr:(NSArray *)arr;
+//初始化方法
+- (instancetype)initWithFrame:(CGRect)frame withTopDataArr:(NSArray *)topDataArr withBottomDataArr:(NSArray *)bottomDataArr;
+
+//按钮返回的block
+- (void)scrollViewButtonClick:(CallBackMessageBlock)buttonBlock;
+
 
 @end

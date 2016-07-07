@@ -24,10 +24,9 @@
     
     NSString *isFirst = [[NSUserDefaults standardUserDefaults] objectForKey:@"isFirst"];
     
-    //默认一直带有引导页的方式
-    GuideVC *guideVC = [[GuideVC alloc] init];
-    self.window.rootViewController = guideVC;
-
+ 
+    TabBarVC *tabBarVC = [[TabBarVC alloc] init];
+    self.window.rootViewController = tabBarVC;
     
     //判断是不是第一次使用软件
 //    if ([isFirst isEqualToString:@"YES"]) {

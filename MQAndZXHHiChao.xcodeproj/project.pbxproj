@@ -14,6 +14,20 @@
 		48F1D7831D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D7821D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.m */; };
 		48F1D7881D2D0ABC00F7FD2D /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D7871D2D0ABC00F7FD2D /* SearchVC.m */; };
 		48F1D78B1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1D78A1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m */; };
+		48F2CAA11D2E30C3008469A2 /* CommunitAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA891D2E30C3008469A2 /* CommunitAction.m */; };
+		48F2CAA21D2E30C3008469A2 /* CommunitBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA8B1D2E30C3008469A2 /* CommunitBase.m */; };
+		48F2CAA31D2E30C3008469A2 /* CommunitComments.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA8D1D2E30C3008469A2 /* CommunitComments.m */; };
+		48F2CAA41D2E30C3008469A2 /* CommunitComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA8F1D2E30C3008469A2 /* CommunitComponent.m */; };
+		48F2CAA51D2E30C3008469A2 /* CommunitData.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA911D2E30C3008469A2 /* CommunitData.m */; };
+		48F2CAA61D2E30C3008469A2 /* CommunitItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA931D2E30C3008469A2 /* CommunitItems.m */; };
+		48F2CAA71D2E30C3008469A2 /* CommunitShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA951D2E30C3008469A2 /* CommunitShare.m */; };
+		48F2CAA81D2E30C3008469A2 /* CommunitShareAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA971D2E30C3008469A2 /* CommunitShareAction.m */; };
+		48F2CAA91D2E30C3008469A2 /* CommunitTagAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA991D2E30C3008469A2 /* CommunitTagAction.m */; };
+		48F2CAAA1D2E30C3008469A2 /* CommunitTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA9B1D2E30C3008469A2 /* CommunitTags.m */; };
+		48F2CAAB1D2E30C3008469A2 /* CommunitUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA9D1D2E30C3008469A2 /* CommunitUser.m */; };
+		48F2CAAC1D2E30C3008469A2 /* CommunitUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CA9F1D2E30C3008469A2 /* CommunitUsers.m */; };
+		48F2CAB21D2E381C008469A2 /* CommunitHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CAB01D2E381C008469A2 /* CommunitHeadView.m */; };
+		48F2CAB51D2E3BFF008469A2 /* CommunitGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F2CAB41D2E3BFF008469A2 /* CommunitGoodsCell.m */; };
 		48FEB5CD1D29EEE400233F31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEB5CC1D29EEE400233F31 /* main.m */; };
 		48FEB5D01D29EEE400233F31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEB5CF1D29EEE400233F31 /* AppDelegate.m */; };
 		48FEB5D31D29EEE400233F31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FEB5D21D29EEE400233F31 /* ViewController.m */; };
@@ -1391,6 +1405,35 @@
 		48F1D7871D2D0ABC00F7FD2D /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
 		48F1D7891D2D0EF700F7FD2D /* GoodsSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsSectionHeaderView.h; sourceTree = "<group>"; };
 		48F1D78A1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsSectionHeaderView.m; sourceTree = "<group>"; };
+		48F2CA881D2E30C3008469A2 /* CommunitAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitAction.h; sourceTree = "<group>"; };
+		48F2CA891D2E30C3008469A2 /* CommunitAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitAction.m; sourceTree = "<group>"; };
+		48F2CA8A1D2E30C3008469A2 /* CommunitBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitBase.h; sourceTree = "<group>"; };
+		48F2CA8B1D2E30C3008469A2 /* CommunitBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitBase.m; sourceTree = "<group>"; };
+		48F2CA8C1D2E30C3008469A2 /* CommunitComments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitComments.h; sourceTree = "<group>"; };
+		48F2CA8D1D2E30C3008469A2 /* CommunitComments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitComments.m; sourceTree = "<group>"; };
+		48F2CA8E1D2E30C3008469A2 /* CommunitComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitComponent.h; sourceTree = "<group>"; };
+		48F2CA8F1D2E30C3008469A2 /* CommunitComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitComponent.m; sourceTree = "<group>"; };
+		48F2CA901D2E30C3008469A2 /* CommunitData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitData.h; sourceTree = "<group>"; };
+		48F2CA911D2E30C3008469A2 /* CommunitData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitData.m; sourceTree = "<group>"; };
+		48F2CA921D2E30C3008469A2 /* CommunitItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitItems.h; sourceTree = "<group>"; };
+		48F2CA931D2E30C3008469A2 /* CommunitItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitItems.m; sourceTree = "<group>"; };
+		48F2CA941D2E30C3008469A2 /* CommunitShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitShare.h; sourceTree = "<group>"; };
+		48F2CA951D2E30C3008469A2 /* CommunitShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitShare.m; sourceTree = "<group>"; };
+		48F2CA961D2E30C3008469A2 /* CommunitShareAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitShareAction.h; sourceTree = "<group>"; };
+		48F2CA971D2E30C3008469A2 /* CommunitShareAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitShareAction.m; sourceTree = "<group>"; };
+		48F2CA981D2E30C3008469A2 /* CommunitTagAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitTagAction.h; sourceTree = "<group>"; };
+		48F2CA991D2E30C3008469A2 /* CommunitTagAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitTagAction.m; sourceTree = "<group>"; };
+		48F2CA9A1D2E30C3008469A2 /* CommunitTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitTags.h; sourceTree = "<group>"; };
+		48F2CA9B1D2E30C3008469A2 /* CommunitTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitTags.m; sourceTree = "<group>"; };
+		48F2CA9C1D2E30C3008469A2 /* CommunitUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitUser.h; sourceTree = "<group>"; };
+		48F2CA9D1D2E30C3008469A2 /* CommunitUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitUser.m; sourceTree = "<group>"; };
+		48F2CA9E1D2E30C3008469A2 /* CommunitUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitUsers.h; sourceTree = "<group>"; };
+		48F2CA9F1D2E30C3008469A2 /* CommunitUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitUsers.m; sourceTree = "<group>"; };
+		48F2CAA01D2E30C3008469A2 /* ComDataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComDataModels.h; sourceTree = "<group>"; };
+		48F2CAB01D2E381C008469A2 /* CommunitHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitHeadView.m; sourceTree = "<group>"; };
+		48F2CAB11D2E381C008469A2 /* CommunitHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitHeadView.h; sourceTree = "<group>"; };
+		48F2CAB31D2E3BFF008469A2 /* CommunitGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunitGoodsCell.h; sourceTree = "<group>"; };
+		48F2CAB41D2E3BFF008469A2 /* CommunitGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunitGoodsCell.m; sourceTree = "<group>"; };
 		48FEB5C81D29EEE400233F31 /* MQAndZXHHiChao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQAndZXHHiChao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FEB5CC1D29EEE400233F31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48FEB5CE1D29EEE400233F31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -2925,6 +2968,31 @@
 		48FEB5ED1D29F8ED00233F31 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48F2CA881D2E30C3008469A2 /* CommunitAction.h */,
+				48F2CA891D2E30C3008469A2 /* CommunitAction.m */,
+				48F2CA8A1D2E30C3008469A2 /* CommunitBase.h */,
+				48F2CA8B1D2E30C3008469A2 /* CommunitBase.m */,
+				48F2CA8C1D2E30C3008469A2 /* CommunitComments.h */,
+				48F2CA8D1D2E30C3008469A2 /* CommunitComments.m */,
+				48F2CA8E1D2E30C3008469A2 /* CommunitComponent.h */,
+				48F2CA8F1D2E30C3008469A2 /* CommunitComponent.m */,
+				48F2CA901D2E30C3008469A2 /* CommunitData.h */,
+				48F2CA911D2E30C3008469A2 /* CommunitData.m */,
+				48F2CA921D2E30C3008469A2 /* CommunitItems.h */,
+				48F2CA931D2E30C3008469A2 /* CommunitItems.m */,
+				48F2CA941D2E30C3008469A2 /* CommunitShare.h */,
+				48F2CA951D2E30C3008469A2 /* CommunitShare.m */,
+				48F2CA961D2E30C3008469A2 /* CommunitShareAction.h */,
+				48F2CA971D2E30C3008469A2 /* CommunitShareAction.m */,
+				48F2CA981D2E30C3008469A2 /* CommunitTagAction.h */,
+				48F2CA991D2E30C3008469A2 /* CommunitTagAction.m */,
+				48F2CA9A1D2E30C3008469A2 /* CommunitTags.h */,
+				48F2CA9B1D2E30C3008469A2 /* CommunitTags.m */,
+				48F2CA9C1D2E30C3008469A2 /* CommunitUser.h */,
+				48F2CA9D1D2E30C3008469A2 /* CommunitUser.m */,
+				48F2CA9E1D2E30C3008469A2 /* CommunitUsers.h */,
+				48F2CA9F1D2E30C3008469A2 /* CommunitUsers.m */,
+				48F2CAA01D2E30C3008469A2 /* ComDataModels.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2932,6 +3000,10 @@
 		48FEB5EE1D29F8ED00233F31 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				48F2CAB11D2E381C008469A2 /* CommunitHeadView.h */,
+				48F2CAB01D2E381C008469A2 /* CommunitHeadView.m */,
+				48F2CAB31D2E3BFF008469A2 /* CommunitGoodsCell.h */,
+				48F2CAB41D2E3BFF008469A2 /* CommunitGoodsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -6006,25 +6078,39 @@
 				48FEB5D31D29EEE400233F31 /* ViewController.m in Sources */,
 				48F1D7801D2C920200F7FD2D /* GoodsTableViewCell.m in Sources */,
 				48FEC0971D2A024E00233F31 /* GuideVC.m in Sources */,
+				48F2CAA61D2E30C3008469A2 /* CommunitItems.m in Sources */,
 				48FEB5D01D29EEE400233F31 /* AppDelegate.m in Sources */,
 				48FEC0B71D2A48FD00233F31 /* HttpManager.m in Sources */,
 				48FEC0AC1D2A13BB00233F31 /* BaseVC.m in Sources */,
 				48FEC0AF1D2A297A00233F31 /* HomeVC.m in Sources */,
 				48FEC0941D2A023C00233F31 /* LoginVC.m in Sources */,
 				48F1D77D1D2C095C00F7FD2D /* TableViewCellModel.m in Sources */,
+				48F2CAAB1D2E30C3008469A2 /* CommunitUser.m in Sources */,
 				48FEC08B1D2A020300233F31 /* CommunityVC.m in Sources */,
+				48F2CAB21D2E381C008469A2 /* CommunitHeadView.m in Sources */,
 				48FEC0CE1D2A94B600233F31 /* TableHeaderView.m in Sources */,
+				48F2CAA51D2E30C3008469A2 /* CommunitData.m in Sources */,
+				48F2CAA71D2E30C3008469A2 /* CommunitShare.m in Sources */,
+				48F2CAA41D2E30C3008469A2 /* CommunitComponent.m in Sources */,
 				48F1D7521D2B521F00F7FD2D /* AllOfLibraryView.m in Sources */,
 				48FEC08E1D2A021300233F31 /* CollocationVC.m in Sources */,
+				48F2CAAA1D2E30C3008469A2 /* CommunitTags.m in Sources */,
 				48F1D7881D2D0ABC00F7FD2D /* SearchVC.m in Sources */,
+				48F2CAA81D2E30C3008469A2 /* CommunitShareAction.m in Sources */,
+				48F2CAA91D2E30C3008469A2 /* CommunitTagAction.m in Sources */,
 				48FEC0881D2A01F200233F31 /* CarVC.m in Sources */,
 				48FEB5CD1D29EEE400233F31 /* main.m in Sources */,
 				48FEC0A01D2A094100233F31 /* MansWearVC.m in Sources */,
 				48FEC0A51D2A0D6200233F31 /* TabBarVC.m in Sources */,
 				48F1D78B1D2D0EF700F7FD2D /* GoodsSectionHeaderView.m in Sources */,
 				48FEC0C81D2A944C00233F31 /* TableHeaderViewModel.m in Sources */,
+				48F2CAA11D2E30C3008469A2 /* CommunitAction.m in Sources */,
 				48F1D7831D2CE5A800F7FD2D /* UIButton+ImageTitleSpacing.m in Sources */,
 				48FEC0851D2A01D500233F31 /* UserVC.m in Sources */,
+				48F2CAAC1D2E30C3008469A2 /* CommunitUsers.m in Sources */,
+				48F2CAA21D2E30C3008469A2 /* CommunitBase.m in Sources */,
+				48F2CAB51D2E3BFF008469A2 /* CommunitGoodsCell.m in Sources */,
+				48F2CAA31D2E30C3008469A2 /* CommunitComments.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

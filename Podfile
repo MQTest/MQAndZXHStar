@@ -7,4 +7,5 @@ pod 'MJRefresh', '~> 3.1.8'
 pod 'SDWebImage', '~> 3.8.1'
 pod 'Masonry', '~> 1.0.1'
 pod 'JSONModel', '~> 1.2.0'
+pod 'SDAutoLayout', '~> 2.1.1'
 end

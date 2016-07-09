@@ -14,7 +14,10 @@
 
 - (instancetype)initWithFrame:(CGRect)frame withTitleArr:(NSArray *)titleArr;
 
+
 - (void)buttonSendMessage:(CallBackMessageBlock)buttonBlock;
+
+
 
 - (void)setAllDefault;
 

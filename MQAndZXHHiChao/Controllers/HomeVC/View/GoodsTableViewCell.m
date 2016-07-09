@@ -78,7 +78,9 @@
     
 }
 
-
+- (void)reload{
+    
+}
 
 
 #pragma mark- set方法

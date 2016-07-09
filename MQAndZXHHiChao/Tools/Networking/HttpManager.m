@@ -168,5 +168,63 @@
 
 }
 
+//获取社区表头信息请求的方法
++ (void)getCommunitHeadViewDataWithBlock:(void(^)(NSArray *dataArr))myBlock{
+    [HttpManager getManager];
+    [_manager GET:@"http://api-v2.mall.hichao.com/forum/banner?gc=appstore&gf=iphone&gn=mxyc_ip&gv=6.6.3&gi=377BD2CF-3DEA-46A4-8BE2-2B65FDA4E94C&gs=640x1136&gos=9.3.1&access_token=" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"%@",[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        if (dic) {
+            NSMutableArray *dataArr = [NSMutableArray array];
+            NSArray *arr = dic[@"data"][@"items"];
+            for (NSDictionary *tempDic in arr) {
+                TableHeaderViewModel *model = [[TableHeaderViewModel alloc] initModelWithDic:tempDic[@"component"]];
+                [dataArr addObject:model];
+            }
+            if (myBlock) {
+                myBlock(dataArr);
+            }
+            
+        }
+        
+        
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
+    }];
+    
+    
+}
+
+//获取社区cell的信息
++ (void)getCommunitCellDataWithBlock:(void(^)(NSArray *dataArr))myBlock{
+    [HttpManager getManager];
+    [_manager GET:@"http://api-v2.mall.hichao.com/forum/timeline?nav_id=5&nav_name=%E7%83%AD%E9%97%A8&flag=&user_id=&gc=appstore&gf=iphone&gn=mxyc_ip&gv=6.6.3&gi=377BD2CF-3DEA-46A4-8BE2-2B65FDA4E94C&gs=640x1136&gos=9.3.1&access_token=" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+//        NSLog(@"%@",[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        
+        if (dic) {
+//            NSMutableArray *dataArr = [NSMutableArray array];
+            
+            NSDictionary *dataDic = dic[@"data"];
+            NSArray *itemsArr = dataDic[@"items"];
+            NSLog(@"itemsArr======%ld",itemsArr.count);
+            if (myBlock) {
+                myBlock(itemsArr);
+            }
+            
+        }
+        
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+}
+
+
+
 
 @end

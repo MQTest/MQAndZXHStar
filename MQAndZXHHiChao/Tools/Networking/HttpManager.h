@@ -21,4 +21,10 @@
 //获取最后cell上的数据
 + (void)getBottomGoodsDataWithURl:(NSString *)url withBlock:(void(^)(NSArray *dataArr))myblock;
 
+//获取社区表头信息请求的方法
++ (void)getCommunitHeadViewDataWithBlock:(void(^)(NSArray *dataArr))myBlock;
+
+//获取社区cell的信息
++ (void)getCommunitCellDataWithBlock:(void(^)(NSArray *dataArr))myBlock;
+
 @end

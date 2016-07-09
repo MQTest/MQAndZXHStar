@@ -68,6 +68,7 @@
 //    self.view.backgroundColor = [UIColor redColor];
     [self createViews];
     [self initData];
+    
 }
 
 #pragma mark- 创建视图
@@ -150,6 +151,7 @@
     }
    //获取最后cell上的数据
     [HttpManager getBottomGoodsDataWithURl:self.goodsCellURLArr[0] withBlock:^(NSArray *dataArr) {
+        
         [self.cellGoodsDataArr addObjectsFromArray:dataArr];
         for (NSInteger i = 0; i < self.cellGoodsDataArr.count; i++) {
             if (i%2 == 0) {
@@ -175,7 +177,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == self.libraryDataArr.count) {
-        return self.cellGoodsDataArr.count/2;
+//        NSLog(@"1===%ld,2=====%ld",[self.indexArr[0] count],[self.indexArr[1] count]);
+//        return [self.indexArr[0] count] >= [self.indexArr[1] count] ? [self.indexArr[0] count]:[self.indexArr[1] count];
+        return self.libraryDataArr.count;
     }else{
         return 0;
     }
@@ -185,6 +189,7 @@
     
     GoodsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     [cell setAllDefault];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.dataArr = self.cellGoodsDataArr;
     cell.index = indexPath.row;
     cell.indexArr = self.indexArr;
@@ -218,10 +223,12 @@
         [view setAllDefault];
         [view buttonSendMessage:^(UIButton *button) {
             NSInteger tag = button.tag - TodayButtonTag;
-            NSLog(@"%ld",tag);
+//            NSLog(@"%ld",tag);
             [HttpManager getBottomGoodsDataWithURl:self.goodsCellURLArr[tag] withBlock:^(NSArray *dataArr) {
                 [self.cellGoodsDataArr removeAllObjects];
                 [self.cellGoodsDataArr addObjectsFromArray:dataArr];
+                [self.indexArr[0] removeAllObjects];
+                [self.indexArr[1] removeAllObjects];
                 for (NSInteger i = 0; i < self.cellGoodsDataArr.count; i++) {
                     if (i%2 == 0) {
                         [self.indexArr[0] addObject:[NSNumber numberWithInteger:i]];
@@ -229,15 +236,16 @@
                         [self.indexArr[1] addObject:[NSNumber numberWithInteger:i]];
                     }
                 }
-
+                
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    
                     NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:section];
                     NSIndexPath *path1 = [NSIndexPath indexPathForRow:1 inSection:section];
                     [_tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionTop animated:YES];
                     //刷新数据   只刷新2行 （一屏数据）
                     [_tableView reloadRowsAtIndexPaths:@[path,path1] withRowAnimation:UITableViewRowAnimationNone];
                 });
+               
+
 
             }];
             

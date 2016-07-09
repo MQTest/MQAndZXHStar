@@ -86,6 +86,7 @@
     
     NSInteger NewTag = sender.tag - TodayButtonTag;
     
+    //如果是选中过的  再次点击没有效果
     if (sender.selected) {
         
     }else{
@@ -97,6 +98,7 @@
         }
     }
      _oldTag = NewTag;
+    
 //    [UIView animateWithDuration:0.5 animations:^{
 //       _lineLabel.frame = CGRectMake(kMainBoundsW/4 * self.count, 40, kMainBoundsW/4, 2);
 //    }];

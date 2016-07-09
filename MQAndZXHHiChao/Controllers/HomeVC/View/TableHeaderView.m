@@ -51,10 +51,12 @@ typedef enum : NSUInteger {
         
         // 表头顶部scrollView
         //为了获取不失真图片的高度
+        NSLog(@"---%ld",_topArr.count);
         TableHeaderViewModel *firstModel = [_topArr firstObject];
         TableHeaderViewModel *lastModel = [_topArr lastObject];
         [_topArr insertObject:lastModel atIndex:0];
         [_topArr addObject:firstModel];
+        NSLog(@"%ld",_topArr.count);
         
         UIScrollView *topScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kMainBoundsW, firstModel.curHeight)];
         topScrollView.delegate = self;
@@ -124,22 +126,19 @@ typedef enum : NSUInteger {
     
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     NSInteger curX = scrollView.contentOffset.x/kMainBoundsW;
     _pageCon.currentPage = curX - 1;
+    if (scrollView.contentOffset.x == kMainBoundsW * (_topArr.count - 1)) {
+        _pageCon.currentPage = 0;
+        scrollView.contentOffset = CGPointMake(kMainBoundsW, 0);
+    }
+    if (scrollView.contentOffset.x == 0) {
+        _pageCon.currentPage = _pageCon.numberOfPages;
+        scrollView.contentOffset = CGPointMake(kMainBoundsW * _pageCon.numberOfPages, 0);
+    }
 }
-
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-//    NSInteger curX = scrollView.contentOffset.x/kMainBoundsW;
-//    _pageCon.currentPage = curX - 1;
-//    
-//    if (scrollView.contentOffset.x > kMainBoundsW * (_topArr.count - 1.5)) {
-//        _pageCon.currentPage = 0;
-//    }
-//    if (scrollView.contentOffset.x < kMainBoundsW * 0.5) {
-//        _pageCon.currentPage = _pageCon.numberOfPages - 1;
-//    }
-//}
 
 - (void)dealloc{
     self.buttonBlock = nil;

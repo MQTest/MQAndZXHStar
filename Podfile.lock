@@ -17,6 +17,7 @@ PODS:
   - JSONModel (1.2.0)
   - Masonry (1.0.1)
   - MJRefresh (3.1.8)
+  - SDAutoLayout (2.1.1)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - JSONModel (~> 1.2.0)
   - Masonry (~> 1.0.1)
   - MJRefresh (~> 3.1.8)
+  - SDAutoLayout (~> 2.1.1)
   - SDWebImage (~> 3.8.1)
 
 SPEC CHECKSUMS:
@@ -33,8 +35,9 @@ SPEC CHECKSUMS:
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJRefresh: d226bbe0b1ec398f426ba1dc99319b4e51182e19
+  SDAutoLayout: c18678b6ae28c67d89cb132e770cfbac9ee20d25
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: f24d2a3a3ec4168146cf3cfb3c9040a26b7f07ad
+PODFILE CHECKSUM: c68de87f91c9239d4d32ca85c4fede03d3574b0c
 
 COCOAPODS: 1.0.1
